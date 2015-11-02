@@ -19,18 +19,15 @@ print(a)
 
 
 # 3. Show how to take a trio of input numbers a, b, and c and implement the quadratic equation.
+# From: https://rstudio-pubs-static.s3.amazonaws.com/46122_3840087773cd4f5a8629ef0228ab152a.html
 
-x <- as.numeric(2)
+a <- 1
+b <- -7
+c <- 4
 
-a <- as.numeric(6)
-b <- as.numeric(9)
-c <- as.numeric(4)
-
-quad <- a * x ^ 2 + b * x + c
-print (quad)
-
-
-
+x1 <- (-1 * b + (( b ^ 2 - (4 * a * c))^.5)) / (2 * a)
+x2 <- (-1 * b - (( b ^ 2 - (4 * a * c))^.5)) / (2 * a)
+print(c(x1, x2))
 
 
 
